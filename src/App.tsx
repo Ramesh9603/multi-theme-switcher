@@ -1,6 +1,5 @@
 
-
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import { ThemeProvider } from "./Context/ThemeContext";
 import Layout from "./Components/Layout";
 import Home from "./Pages/Home";
@@ -15,8 +14,8 @@ function App() {
         <Layout>
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/About" element={<About />} />
-            <Route path="/Contact" element={<Contact />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/contact" element={<Contact />} />
           </Routes>
         </Layout>
       </Router>
@@ -25,5 +24,6 @@ function App() {
 }
 
 export default App;
+
   
 
